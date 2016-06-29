@@ -29,7 +29,7 @@ The API has been tested on below mentioned HDP 2.4 components:
 
 #### DiP High Level Process Workflow
 
-![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/blob/master/src/main/resources/images/architecture.PNG "Application Architecture") 
+![alt text](https://github.com/XavientInformationSystems/DiP-DataIngestionPlatform-/blob/master/src/main/resources/images/architecture.PNG "Application Architecture") 
 
 - Input to the application can be fed from a user interface that allows you either enter data manually or upload the data in XML, JSON or CSV file format for bulk processing
 - Data ingested is published by the Kafka broker which streams the data to Kafka spout which acts as consumer across the topology
@@ -67,7 +67,7 @@ hdfs dfs -chmod 777 /user/storm/output
 ./kafka-topics.sh --create --topic kafka_topic --zookeeper zookeeper-server:port --replication-factor 1 --partition 5
 ```
 
-- Download the data ingestion source code from https://github.com/mohnkhan/DiP-DataIngestionPlatform and compile the code using below commands:
+- Download the data ingestion source code from https://github.com/XavientInformationSystems/DiP-DataIngestionPlatform- and compile the code using below commands:
 
 ```
 # Decompress the zip file.
@@ -89,9 +89,9 @@ storm jar uber-dataingest-1.0.0.jar com.xavient.storm.dataingest.DataIngestionTo
 
 - The topology visualization will look like this:
 
-![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/blob/master/src/main/resources/images/toplogy.PNG "Logo Title Text 1") 
+![alt text](https://github.com/XavientInformationSystems/DiP-DataIngestionPlatform-/blob/master/src/main/resources/images/toplogy.PNG "Logo Title Text 1") 
 
-- Download the DataIngestUI source code from https://github.com/mohnkhan/DiP-DataIngestionPlatformUI and start it using apache tomcat as shown below:
+- Download the DataIngestUI source code from https://github.com/XavientInformationSystems/DiP-DataIngestionPlatformUI- and start it using apache tomcat as shown below:
 
 ```
 Commands for starting UI application
@@ -99,7 +99,7 @@ Commands for starting UI application
 
 - Open the UI for the application by visiting the URL "http://tomcat-server:port/DataIngestGUI/UI.jsp" , it will look like this:
 
-![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/blob/master/src/main/resources/images/file-picker.PNG "File Picker") 
+![alt text](https://github.com/XavientInformationSystems/DiP-DataIngestionPlatform-/blob/master/src/main/resources/images/file-picker.PNG "File Picker") 
 
 - Now you have two options, either enter data manually in the message box or upload a file. Below mentioned are some sample data rows:
     - JSON
@@ -143,4 +143,4 @@ select id,price from books;
 
 - You can draw various charts/graphs in Zeppelin as shown below:
  
-![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/blob/master/src/main/resources/images/zeppelin-reports.PNG "Reports") 
+![alt text](https://github.com/XavientInformationSystems/DiP-DataIngestionPlatform-/blob/master/src/main/resources/images/zeppelin-reports.PNG "Reports") 
