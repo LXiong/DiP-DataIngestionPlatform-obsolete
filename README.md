@@ -89,7 +89,7 @@ storm jar uber-dataingest-1.0.0.jar com.xavient.storm.dataingest.DataIngestionTo
 
 - The topology visualization will look like this:
 
-![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/tree/master/src/main/resources/images/toplogy.PNG "Logo Title Text 1") 
+![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/blob/master/src/main/resources/images/toplogy.PNG "Logo Title Text 1") 
 
 - Download the DataIngestUI source code from https://github.com/mohnkhan/DiP-DataIngestionPlatformUI and start it using apache tomcat as shown below:
 
@@ -99,7 +99,7 @@ Commands for starting UI application
 
 - Open the UI for the application by visiting the URL "http://tomcat-server:port/DataIngestGUI/UI.jsp" , it will look like this:
 
-![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/tree/master/src/main/resources/images/file-picker.PNG "File Picker") 
+![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/blob/master/src/main/resources/images/file-picker.PNG "File Picker") 
 
 - Now you have two options, either enter data manually in the message box or upload a file. Below mentioned are some sample data rows:
     - JSON
@@ -143,4 +143,4 @@ select id,price from books;
 
 - You can draw various charts/graphs in Zeppelin as shown below:
  
-![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/tree/master/src/main/resources/images/zeppelin-reports.PNG "Reports") 
+![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/blob/master/src/main/resources/images/zeppelin-reports.PNG "Reports") 
