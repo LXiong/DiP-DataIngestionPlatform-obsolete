@@ -29,7 +29,7 @@ The API has been tested on below mentioned HDP 2.4 components:
 
 #### DiP High Level Process Workflow
 
-![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/tree/master/src/main/resources/images/architecture.PNG "Application Architecture") 
+![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/blob/master/src/main/resources/images/architecture.PNG "Application Architecture") 
 
 - Input to the application can be fed from a user interface that allows you either enter data manually or upload the data in XML, JSON or CSV file format for bulk processing
 - Data ingested is published by the Kafka broker which streams the data to Kafka spout which acts as consumer across the topology
