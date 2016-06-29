@@ -2,7 +2,7 @@
 
 YouTube video URL: https://www.youtube.com/watch?v=-QRR6qiFL_U
 
-“Data Ingestion Platform utilizes the true power of the latest edge-cutting technologies in the big data ecosystem to achieve almost real time data analytics and visualization”.
+"Data Ingestion Platform utilizes the true power of the latest edge-cutting technologies in the big data ecosystem to achieve almost real time data analytics and visualization".
 
 DiP, scalable up to thousands of nodes, can take in data from multiple sources and in different forms to store it into multiple platforms and provide you the ability to query the data on the go.
 
@@ -29,7 +29,7 @@ The API has been tested on below mentioned HDP 2.4 components:
 
 #### DiP High Level Process Workflow
 
-![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/tree/master/src/main/resources/images/architecture.PNG "Logo Title Text 1") 
+![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/tree/master/src/main/resources/images/architecture.PNG "Application Architecture") 
 
 - Input to the application can be fed from a user interface that allows you either enter data manually or upload the data in XML, JSON or CSV file format for bulk processing
 - Data ingested is published by the Kafka broker which streams the data to Kafka spout which acts as consumer across the topology
@@ -99,15 +99,16 @@ Commands for starting UI application
 
 - Open the UI for the application by visiting the URL "http://tomcat-server:port/DataIngestGUI/UI.jsp" , it will look like this:
 
-![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/tree/master/src/main/resources/images/file-picker.PNG "Logo Title Text 1") 
+![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/tree/master/src/main/resources/images/file-picker.PNG "File Picker") 
 
 - Now you have two options, either enter data manually in the message box or upload a file. Below mentioned are some sample data rows:
     - JSON
         - {"id":"XIND10000","author":"Jack White","title":"Hadoop Made Easy","genre":"Programming","price":"50000","publish_date":"2001-09-10","description":"ebook"}
         - {"id":"XIND10002","author":"Steven Berg","title":"Apache Source","genre":"Programming","price":"45000","publish_date":"2001-10-10","description":"ebook"}
     - XML
-       -    <catalog><book id="bk101"><author>Gambardella, Matthew</author><title>XML Developer's Guide</title><genre>Computer</genre><price>44.95</price><publish_date>2000-10-01</publish_date><description>An in-depth look at creating applications with XML.</description></book></catalog>
+```xml       -    <catalog><book id="bk101"><author>Gambardella, Matthew</author><title>XML Developer's Guide</title><genre>Computer</genre><price>44.95</price><publish_date>2000-10-01</publish_date><description>An in-depth look at creating applications with XML.</description></book></catalog>
        -    <catalog><book id="bk102"><author>Ralls, Kim</author><title>Midnight Rain</title><genre>Fantasy</genre><price>5.95</price><publish_date>2000-12-16</publish_date><description>A former architect battles corporate zombies,an evil sorceress, and her own childhood to become queen of the world.</description></book></catalog>
+```
 
 -   Press submit after copying the sample data in message box. A pop up will appear which says "message has been published to Kafka"
 
@@ -143,4 +144,4 @@ select id,price from books;
 
 - You can draw various charts/graphs in Zeppelin as shown below:
  
-![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/tree/master/src/main/resources/images/zeppelin-reports.PNG "Logo Title Text 1") 
+![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/tree/master/src/main/resources/images/zeppelin-reports.PNG "Reports") 
