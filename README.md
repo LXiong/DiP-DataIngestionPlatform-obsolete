@@ -1,6 +1,6 @@
 # Data Ingestion Platform(DiP)
 
-YouTube video URL: https://www.youtube.com/watch?v=-QRR6qiFL_U
+Demo YouTube video URL: https://www.youtube.com/watch?v=-QRR6qiFL_U
 
 "Data Ingestion Platform utilizes the true power of the latest edge-cutting technologies in the big data ecosystem to achieve almost real time data analytics and visualization".
 
