@@ -91,7 +91,7 @@ storm jar uber-dataingest-1.0.0.jar com.xavient.storm.dataingest.DataIngestionTo
 
 ![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/tree/master/src/main/resources/images/toplogy.PNG "Logo Title Text 1") 
 
-- Download the DataIngestUI source code from "www.URL" and start it using apache tomcat as shown below:
+- Download the DataIngestUI source code from https://github.com/mohnkhan/DiP-DataIngestionPlatformUI and start it using apache tomcat as shown below:
 
 ```
 Commands for starting UI application
