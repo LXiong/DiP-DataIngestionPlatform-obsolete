@@ -64,10 +64,10 @@ hdfs dfs -chmod 777 /user/storm/output
 
 - Go to $KAFKA_INSTALL_DIR/bin and create a Kafka topic named "kafka_topic" using the below mentioned command
 ```
-./kafka-topics.sh --create --topic kafka_topic --zookeeper <zookeeper-server>:<port> --replication-factor 1 --partition 5
+./kafka-topics.sh --create --topic kafka_topic --zookeeper zookeeper-server:port --replication-factor 1 --partition 5
 ```
 
-- Download the data ingestion source code from <<<TODO>>> and compile the code using below commands:
+- Download the data ingestion source code from https://github.com/mohnkhan/DiP-DataIngestionPlatform and compile the code using below commands:
 
 ```
 # Decompress the zip file.
@@ -85,7 +85,7 @@ mvn clean package
 storm jar uber-dataingest-1.0.0.jar com.xavient.storm.dataingest.DataIngestionTopology
 ```
 
-- Once you have sumbmitted the jar , navigate to the Storm UI at http://<storm-ui-server>:<port>/index.html
+- Once you have sumbmitted the jar , navigate to the Storm UI at http://storm-ui-server:port/index.html
 
 - The topology visualization will look like this:
 
@@ -97,7 +97,7 @@ storm jar uber-dataingest-1.0.0.jar com.xavient.storm.dataingest.DataIngestionTo
 Commands for starting UI application
 ```
 
-- Open the UI for the application by visiting the URL "http://<tomcat-server>:<port>/DataIngestGUI/UI.jsp" , it will look like this:
+- Open the UI for the application by visiting the URL "http://tomcat-server:port/DataIngestGUI/UI.jsp" , it will look like this:
 
 ![alt text](https://github.com/mohnkhan/DiP-DataIngestionPlatform/tree/master/src/main/resources/images/file-picker.PNG "Logo Title Text 1") 
 
@@ -121,7 +121,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS books(id STRING, author STRING, title STRING
 ```
 CREATE VIEW "testview"(pid VARCHAR PRIMARY KEY , "books"."author" VARCHAR,"books"."description" VARCHAR ,"books"."genre" VARCHAR ,"books"."id" VARCHAR ,"books"."price" VARCHAR , "books"."publish_date" VARCHAR, "books"."title" VARCHAR )AS SELECT * FROM "books";
 ```
-- To use phoenix interpreter in Zeppelin, open the Zeppelin URL at http://<zeppelin-server>:<port>/#/
+- To use phoenix interpreter in Zeppelin, open the Zeppelin URL at http://zeppelin-server:port/#/
     - Create a new Phoenix notebook to connect to Phoenix and visualize the data.
         - Type the below command in the interpreter:
 ```
@@ -131,7 +131,7 @@ CREATE VIEW "testview"(pid VARCHAR PRIMARY KEY , "books"."author" VARCHAR,"books
 select "id","price" from "testview"
 ```
 
-- To use hive interpreter, open the Zeppelin URL at http://<zeppelin-server>:<port>/#/
+- To use hive interpreter, open the Zeppelin URL at http://zeppelin-server:port/#/
     -   Create a new Phoenix notebook to connect to Phoenix and visualize the data.
         -   Type the below command in the interpreter:
 ```
